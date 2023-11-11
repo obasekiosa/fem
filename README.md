@@ -1,4 +1,4 @@
-
+[![Deployment](https://github.com/obasekiosa/fem/actions/workflows/main.yml/badge.svg)](https://github.com/obasekiosa/fem/actions/workflows/main.yml)
 
 # Getting Started with Create React App
 
