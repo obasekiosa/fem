@@ -1,7 +1,4 @@
-// import "./ResultSummaryComponentPage"
+import { Result } from "./components"
 import { ResultSummaryComponentPage } from "./ResultSummaryComponentPage"
 
-export { ResultSummaryComponentPage }
-
-// export * from "./ResultSummaryComponentPage"
-
+export { ResultSummaryComponentPage, Result }

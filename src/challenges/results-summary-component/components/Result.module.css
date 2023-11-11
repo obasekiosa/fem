@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Result {
+
+    /* Primary */
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --grean-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+    --light-slate-blue: hsl(252, 100%, 67%);
+    --light-royal-blue: hsl(241, 81%, 54%);
+    --violet-blue: hsla(256, 72%, 46%, 1);
+    --persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Fonts */
+    --font-size-paragraph: 18px;
+    --font-family: Hanken Grotesk;
+    --font-weight-light: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra: 800;
+
+    /* Items */
+    --vertical-space: 1rem;
+
+    --button-gap: 0.8rem;
+    --button-font-size: 1.3rem;
+
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 380px;
+    min-height: 700px;
+    font-family: var(--font-family);
+    box-shadow: 20px 20px 100px 1px #A4A3A290;
+    
+    
+    .topSection { 
+
+        border: 1px solid brown;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 45%;
+        padding: 0 1rem 3.5rem 1rem;
+        border-radius: 0 0 3rem 3rem;
+        background: linear-gradient(0deg, #302CEA, #6743FE);
+
+        .startMsg {
+            margin-top: 2.5rem;
+            color: #C2B5FF;
+            font-weight: var(--font-weight-extra);
+            font-size: 1.3rem;
+        }
+
+        .scoreLargeDisplay {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            padding: 2rem;
+            color: #8476FD;
+            text-align: center;
+            font-size: 1rem;
+            width: 10rem;
+            height: 10rem;
+            background: linear-gradient(#4D20CC, #4633EF);
+            margin-top: 2rem;
+
+            .largeScore {
+                font-size: 4rem;
+                color: var(--white);
+                font-weight: var(--font-weight-extra);
+            }
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: var(--light-lavender);
+            line-height: 1.4;
+            font-size: 1.2rem;
+            margin-top: 1.2rem;
+
+
+            .msgExcamation {
+                margin-bottom: 0.7rem;
+                color: var(--white);
+                font-size: 1.5rem;
+                font-weight: var(--font-weight-bold);
+            }
+        }
+
+        
+    }
+
+    .bottomSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 2rem 1rem 2rem 2rem;
+
+        width: 100%;
+        height: 55%;
+
+        .summary {
+            color: var(--dark-gray-blue);
+            font-weight: var(--font-weight-extra);
+            margin-bottom: 0.6rem;
+            font-size: 1.3rem;
+        }
+
+
+        .continueButton {
+            width: 100%;
+            padding: 1.4rem;
+            font-size: var(--button-font-size);
+            border-radius: 2rem;
+            border: none;
+            margin-top: calc(var(--vertical-space) + var(--button-gap));
+            background-color: var(--dark-gray-blue);
+            color: var(--white);
+            font-weight: var(--font-weight-bold);
+
+            transition-property: color background-image;
+            transition-delay: 10ms;
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+
+            &:hover {
+                color: var(--light-lavender);
+                cursor: pointer;            
+                background-image: linear-gradient(0deg, #302CEA, #6743FE);
+            }
+        }
+    }
+
+
+    .ResultItem {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: aquamarine;
+        padding: 1.4rem;
+        font-size: 1.2rem;
+        border-radius: 0.9rem;
+        margin-top: var(--vertical-space);
+        
+
+        .icon {
+
+        }
+
+        .titleSection {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 0.4rem;
+            font-weight: var(--font-weight-bold);
+        }
+
+        .scoreSection {
+            
+            color: #A4A3A2;
+            font-weight: var(--font-weight-bold);
+
+            .score {
+                font-weight: var(--font-weight-extra);
+                color: var(--dark-gray-blue);
+            }
+        }
+
+        .maxScore {
+
+        }
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 900px) {
+    
+    .Result {
+        --vertical-space: 1rem;
+        --button-gap: 1.3rem;
+        --button-font-size: 1.4rem;
+
+        flex-direction: row;
+        border-radius: 3em;
+        min-width: 1024px;
+        min-height: fit-content;
+
+        .topSection {
+            justify-content: flex-start;
+            border-radius: 3rem;
+            height: fit-content;
+            width: 100%;
+
+
+            .startMsg {
+                margin-top: 3.5rem;
+                font-size: 1.8rem;
+            }
+
+
+            .scoreLargeDisplay {
+                width: 16rem;
+                height: 16rem;
+                margin-top: 2.5rem;
+
+                font-size: 1.25rem;
+
+                .largeScore {
+                    font-size: 5rem;
+                }
+            }
+
+
+            .message {
+                margin-top: 2rem;
+                max-width: 60%;
+                font-size: 1.2rem;
+
+                .msgExcamation {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .bottomSection {
+            height: 100%;
+            width: 100%;
+
+            padding: 3rem 3rem 2rem 3rem;
+
+            .summary {
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
