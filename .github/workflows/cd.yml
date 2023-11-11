@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on: push
+
+permissions: 
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GitHub Pages status 🙏
+        uses: crazy-max/ghaction-github-status@v3
+        with:
+          pages_threshold: major_outage
+          
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      
+      - name: Setup and Install 🔧
+        run: |
+          yarn install
+
+      - name: Build 🏗️
+        run: yarn build
+          
+      - name: Deploy to GitHub Pages 🚀
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
