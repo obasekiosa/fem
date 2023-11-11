@@ -1,6 +1,4 @@
-// import SamplePage from "./SamplePage";
-
-export { SamplePage } from "./SamplePage";
-export * from "./compnents/Sample"
-
+import SamplePage from "./SamplePage";
 import { Sample } from "./compnents";
+
+export { SamplePage, Sample };

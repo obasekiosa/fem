@@ -2,7 +2,7 @@ import {
     createHashRouter,
 } from "react-router-dom";
 import App from "./App";
-import { Demo } from "./challenges";
+import { ResultSummaryComponentPage, SamplePage } from "./challenges";
 import Error from "./error";
 
 const router = createHashRouter([
@@ -12,8 +12,12 @@ const router = createHashRouter([
         errorElement: <Error />
     },
     {
-        path: "/test",
-        element: <Demo />
+        path: "/sample-page",
+        element: <SamplePage />
+    },
+    {
+        path: "/results-summary-component",
+        element: <ResultSummaryComponentPage />
     }
 ]);
 
