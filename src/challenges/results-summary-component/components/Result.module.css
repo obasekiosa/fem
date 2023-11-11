@@ -142,10 +142,9 @@
             color: var(--white);
             font-weight: var(--font-weight-bold);
 
-            transition-property: color background-image;
+            transition-property: color background-color;
             transition-delay: 10ms;
             transition-timing-function: ease-in-out;
-            transition-duration: 1s;
 
             &:hover {
                 color: var(--light-lavender);
