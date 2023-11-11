@@ -5,8 +5,7 @@ import App from "./App";
 import { Demo } from "./challenges";
 import Error from "./error";
 
-
-
+const ROOT_PATH = "/fem";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +17,8 @@ const router = createBrowserRouter([
         path: "/test",
         element: <Demo />
     }
-]);
+], {
+    basename: ROOT_PATH
+});
 
 export default router;
