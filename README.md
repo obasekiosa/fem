@@ -1,3 +1,5 @@
+[![Deploy to GitHub Pages](https://github.com/obasekiosa/fem/actions/workflows/cd.yml/badge.svg)](https://github.com/obasekiosa/fem/actions/workflows/cd.yml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
