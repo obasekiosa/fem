@@ -1,0 +1,25 @@
+name: Build and deploy 
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          
+      - name: Install 🔧
+        run: yarn install
+
+      - name: Build 🏗️ and Deploy to GH Pages 🚀 with gh-pages
+        run: |
+          yarn deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
