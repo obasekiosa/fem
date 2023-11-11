@@ -15,17 +15,11 @@ jobs:
           
       - name: Setup and Install 🔧
         run: |
-          git config user.email $GIT_AUTHOR_EMAIL
-          git config user.name $GIT_AUTHOR_NAME
-          echo $GIT_AUTHOR_EMAIL
-          echo $GIT_AUTHOR_NAME
           yarn install
-        env:
-          GIT_AUTHOR_EMAIL: ${{ secrets.GIT_AUTHOR_EMAIL }}
-          GIT_AUTHOR_NAME: ${{ secrets.GIT_AUTHOR_NAME }}
 
       - name: Build 🏗️ and Deploy to GH Pages 🚀 with gh-pages
         run: |
-          yarn deploy
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn deploy -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
