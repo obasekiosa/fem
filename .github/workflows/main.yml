@@ -1,0 +1,32 @@
+name: Build and Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+permissions: 
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GitHub Pages status 🙏
+        uses: crazy-max/ghaction-github-status@v3
+        with:
+          pages_threshold: major_outage
+          
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      
+      - name: Setup and Install 🔧
+        run: |
+          yarn install
+          
+      - name: Build 🏗️ and Deploy with gh-pages 🚀
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          yarn deploy -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
