@@ -39,7 +39,7 @@ function ResultItem({colors, icon, name, value, maxValue}) {
     return (
         <li className={styles.ResultItem} style={{backgroundColor: colors.bg, color: colors.text}}>
             <div className={styles.titleSection}>
-                <img src={icon} />
+                <img src={icon} alt="icon"/>
                 <span>{name}</span>
             </div>
             <div className={styles.scoreSection}><span className={styles.score}>{value}</span> / {maxValue}</div>
