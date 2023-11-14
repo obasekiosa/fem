@@ -1,0 +1,9 @@
+
+
+
+
+.ProductPreviewCard {
+
+    --value: orange;
+    background-color: var(--value);
+}

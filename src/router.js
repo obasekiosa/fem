@@ -2,7 +2,7 @@ import {
     createHashRouter,
 } from "react-router-dom";
 import App from "./App";
-import { ResultSummaryComponentPage, SamplePage } from "./challenges";
+import { ProductPreviewCardComponentPage, ResultSummaryComponentPage, SamplePage } from "./challenges";
 import Error from "./error";
 
 const router = createHashRouter([
@@ -18,6 +18,10 @@ const router = createHashRouter([
     {
         path: "/results-summary-component",
         element: <ResultSummaryComponentPage />
+    },
+    {
+        path: "/product-card-component",
+        element: <ProductPreviewCardComponentPage />
     }
 ]);
 
