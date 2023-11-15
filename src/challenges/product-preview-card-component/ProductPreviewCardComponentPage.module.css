@@ -2,8 +2,6 @@
 
 .main {
     --cream: hsl(30, 38%, 92%);
-    /* background-color: #F3EBE3; */
-    background-color: #FAEBD7;
     background-color: var(--cream);
     height: 100vh;
     display: flex;
