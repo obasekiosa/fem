@@ -20,7 +20,7 @@ const router = createHashRouter([
         element: <ResultSummaryComponentPage />
     },
     {
-        path: "/product-card-component",
+        path: "/product-preview-card-component",
         element: <ProductPreviewCardComponentPage />
     }
 ]);
