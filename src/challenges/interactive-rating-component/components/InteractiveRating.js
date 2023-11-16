@@ -58,9 +58,9 @@ function Rating({title, onClick, selected}) {
     const style = `${styles.Rating} ${selected ? styles.selected : ""} `;
 
     return (
-        <p className={style} onClick={() => onClick(title)}>
+        <li className={style} onClick={() => onClick(title)}>
             <span>{title}</span>
-        </p>
+        </li>
     )
 }
 
