@@ -1,0 +1,13 @@
+
+
+
+.main {
+    --very-dark-blue: hsl(216, 12%, 8%);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-dark-blue);
+}

@@ -2,7 +2,7 @@ import {
     createHashRouter,
 } from "react-router-dom";
 import App from "./App";
-import { ProductPreviewCardComponentPage, ResultSummaryComponentPage, SamplePage } from "./challenges";
+import { InteractiveRatingComponentPage, ProductPreviewCardComponentPage, ResultSummaryComponentPage, SamplePage } from "./challenges";
 import Error from "./error";
 
 const router = createHashRouter([
@@ -22,6 +22,10 @@ const router = createHashRouter([
     {
         path: "/product-preview-card-component",
         element: <ProductPreviewCardComponentPage />
+    },
+    {
+        path: "/interactive-rating-component",
+        element: <InteractiveRatingComponentPage />
     }
 ]);
 
