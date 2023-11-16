@@ -32,7 +32,7 @@
     max-width: 360px; /* 300 */
 
     background: linear-gradient(var(--tinted-blue), var(--pale-dark-blue));
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 25px 25px 40px 25px;
 }
 
