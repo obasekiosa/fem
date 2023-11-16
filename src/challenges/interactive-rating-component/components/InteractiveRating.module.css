@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .InteractiveRating {
     --mobile: 375px;
     --desktop: 1440px;
@@ -7,15 +13,150 @@
 
     --primary-orange: hsl(25, 97%, 53%);
 
-    --white:  hsl(0, 0%, 100%);
+    --pale-blue: #252E38;
+    --tinted-blue: #232933;
+
+    --white:  hsl(0, 0%, 85%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
-
+    --pale-dark-blue: #171E29;
     --font-size: 15px;
+
+    --circle-size: 48px;
 
     font-size: var(--font-size);
     font-family: "Overpass";
     color: var(--medium-grey);
+    max-width: 360px; /* 300 */
+
+    background: linear-gradient(var(--tinted-blue), var(--pale-dark-blue));
+    border-radius: 20px;
+    padding: 25px 25px 40px 25px;
+}
+
+.RatingSection {
+    & > img {
+        background-color: var(--pale-blue);
+        padding: 16px;
+        width: var(--circle-size);
+        border-radius: 100%;
+    }
+
+    & > h1 {
+        margin-top: 16px;
+        color: var(--white);
+        font-size: 1.8rem;
+    }
+
+    & > p {
+        margin-top: 10px;
+        line-height: 1.45;
+        font-size: 1rem;
+    }
+
+    & > ul {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    & > button {
+        margin-top: 30px;
+        background-color: var(--primary-orange);
+        color: var(--white);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        font-size: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 20px;
+        padding: 12px;
+
+
+        transition-property: background-color, color;
+        transition-duration: 100ms;
+        transition-delay: 10ms;
+        transition-timing-function: ease-in-out;
+    }
+
+    & > button:hover {
+        background-color: var(--white);
+        color: var(--primary-orange);
+        cursor: pointer;
+    }
+}
+
+.ResultSection {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > img {
+        margin-top: 10px;
+    }
+
+    & > p:first-of-type {
+        margin-top: 25px;
+        color: var(--primary-orange);
+        background-color: var(--pale-blue);
+        padding: 12px 16px 8px 16px;
+        
+        border-radius: 25px;
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+
+    & > h1 {
+        margin-top: 25px;
+        color: var(--white);
+        font-size: 1.7rem;
+    }
+
+    & > p:last-of-type {
+        margin-top: 16px;
+        text-align: center;
+        font-size: 0.959rem;
+        line-height: 1.5;
+    }
+}
+
+.Rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    background-color: var(--pale-blue);
+    border-radius: 100%;
+    font-size: 1rem;
+    padding-top: 4px;
+
+
+    &:hover {
+        background-color: var(--primary-orange);
+        color: var(--white);
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    &.selected {
+        background-color: var(--medium-grey);
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .InteractiveRating {
+        --circle-size: 54px;
+        max-width: 400px;
+    }
 }
