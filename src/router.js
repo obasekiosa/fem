@@ -2,7 +2,7 @@ import {
     createHashRouter,
 } from "react-router-dom";
 import App from "./App";
-import { InteractiveRatingComponentPage, ProductPreviewCardComponentPage, ResultSummaryComponentPage, SamplePage } from "./challenges";
+import { InteractiveRatingComponentPage, ProductPreviewCardComponentPage, QRCodeComponentPage, ResultSummaryComponentPage, SamplePage } from "./challenges";
 import Error from "./error";
 
 const router = createHashRouter([
@@ -26,6 +26,10 @@ const router = createHashRouter([
     {
         path: "/interactive-rating-component",
         element: <InteractiveRatingComponentPage />
+    },
+    {
+        path: "/qr-code-component",
+        element: <QRCodeComponentPage />
     }
 ]);
 
