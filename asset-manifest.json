@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fem/static/css/main.299a090d.css",
+    "main.css": "/fem/static/css/main.7ff73df5.css",
     "main.js": "/fem/static/js/main.6f0b2565.js",
     "static/js/787.2b487bf8.chunk.js": "/fem/static/js/787.2b487bf8.chunk.js",
     "static/media/image-product-desktop.jpg": "/fem/static/media/image-product-desktop.c96d43af17111fe78e96.jpg",
@@ -14,12 +14,12 @@
     "static/media/icon-star.svg": "/fem/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
     "static/media/icon-verbal.svg": "/fem/static/media/icon-verbal.cc1204a0b0559da591a3ea6e99c5cf50.svg",
     "static/media/icon-reaction.svg": "/fem/static/media/icon-reaction.0c1d6b98b4559ba72276d9ceda14692d.svg",
-    "main.299a090d.css.map": "/fem/static/css/main.299a090d.css.map",
+    "main.7ff73df5.css.map": "/fem/static/css/main.7ff73df5.css.map",
     "main.6f0b2565.js.map": "/fem/static/js/main.6f0b2565.js.map",
     "787.2b487bf8.chunk.js.map": "/fem/static/js/787.2b487bf8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.299a090d.css",
+    "static/css/main.7ff73df5.css",
     "static/js/main.6f0b2565.js"
   ]
 }
