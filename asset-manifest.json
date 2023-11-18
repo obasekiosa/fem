@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fem/static/css/main.d5861f7e.css",
-    "main.js": "/fem/static/js/main.35301619.js",
+    "main.css": "/fem/static/css/main.81d42989.css",
+    "main.js": "/fem/static/js/main.b0b11a02.js",
     "static/js/787.2b487bf8.chunk.js": "/fem/static/js/787.2b487bf8.chunk.js",
     "static/media/image-product-desktop.jpg": "/fem/static/media/image-product-desktop.c96d43af17111fe78e96.jpg",
     "static/media/image-product-mobile.jpg": "/fem/static/media/image-product-mobile.113818bc746dc8e64ffb.jpg",
@@ -18,12 +18,12 @@
     "static/media/icon-star.svg": "/fem/static/media/icon-star.2d8e7b7cb342bc812e9df51d276eaa78.svg",
     "static/media/icon-verbal.svg": "/fem/static/media/icon-verbal.cc1204a0b0559da591a3ea6e99c5cf50.svg",
     "static/media/icon-reaction.svg": "/fem/static/media/icon-reaction.0c1d6b98b4559ba72276d9ceda14692d.svg",
-    "main.d5861f7e.css.map": "/fem/static/css/main.d5861f7e.css.map",
-    "main.35301619.js.map": "/fem/static/js/main.35301619.js.map",
+    "main.81d42989.css.map": "/fem/static/css/main.81d42989.css.map",
+    "main.b0b11a02.js.map": "/fem/static/js/main.b0b11a02.js.map",
     "787.2b487bf8.chunk.js.map": "/fem/static/js/787.2b487bf8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5861f7e.css",
-    "static/js/main.35301619.js"
+    "static/css/main.81d42989.css",
+    "static/js/main.b0b11a02.js"
   ]
 }
