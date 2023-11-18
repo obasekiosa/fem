@@ -77,11 +77,12 @@
             margin-top: 28px;
             text-align: start;
             max-width: 40ch;
+            font-weight: bold;
         }
 
         .topLeft > h1 {
             text-align: start;
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
             
         }
