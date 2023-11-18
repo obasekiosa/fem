@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+.RatingCard{
+
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --font-size: 15px;
+
+    --background-color: #f7f2f8;
+    --extra-bold: 700
+
+    border: 1px solid green;
+
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+
+    & img {
+        width: 16px;
+    }
+
+    & > div > img + img {
+        margin-left: 8px;
+    }
+
+    & > p {
+        margin-top: 16px;
+        color: var(--very-dark-magenta);
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .RatingCard {
+        display: flex;
+
+        & > p {
+            margin-top: 0;
+            margin-left: 32px;
+        }
+    }
+}

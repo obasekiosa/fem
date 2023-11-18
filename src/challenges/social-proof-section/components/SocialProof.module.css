@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.SocialProof {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+
+    --font-size: 15px;
+    --text-color: #998d99;
+
+    max-width: 325px;
+    font-family: "League Spartan";
+
+    
+
+
+    .topLeft > h1 {
+        color: var(--very-dark-magenta);
+        text-align: center;
+        font-size: 2rem;
+        margin: auto;
+        max-width: 15ch;
+    }
+
+    .topLeft > p {
+        margin-top: 24px;
+        color: var(--text-color);
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.25;
+    }
+
+    .RatingContainer:not(:first-child),.ProofContainer:not(:first-child) {
+        margin-top: 16px;
+    }
+
+    .bottom {
+        margin-top: 48px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px){
+
+
+    .SocialProof {
+        max-width: 1110px;
+
+
+        .top {
+            display: flex;
+        }
+
+        .topLeft {
+            width: 50%;
+        }
+
+        .topRight {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .topLeft > p {
+            margin-top: 28px;
+            text-align: start;
+            max-width: 40ch;
+        }
+
+        .topLeft > h1 {
+            text-align: start;
+            font-size: 2.5rem;
+            margin: 0;
+            
+        }
+
+        .bottom {
+            margin-top: 80px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .RatingContainer {
+            width: 80%;
+        }
+
+        .RatingContainer:first-child {
+            margin-top: 32px;
+            margin-right: 96px;
+        }
+
+        .RatingContainer:nth-child(2) {
+            margin-right: 48px;
+        }
+
+
+
+        .ProofContainer:not(:first-child) {
+            margin-top: 0;
+            margin-left: 30px;
+        }
+
+        .ProofContainer:nth-child(2) {
+            margin-bottom: 16px;
+        }
+
+        .ProofContainer:first-child {
+            margin-bottom: 32px;
+        }
+
+    }
+
+
+    
+    
+}

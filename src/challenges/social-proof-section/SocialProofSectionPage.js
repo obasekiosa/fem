@@ -1,12 +1,13 @@
 import styles from "./SocialProofSectionPage.module.css";
+import { SocialProof } from "./components";
 
 
 
 export function SocialProofSectionPage() {
 
     return (
-        <main>
-    
+        <main className={styles.main}>
+            <SocialProof />
         </main>
     );
 }
