@@ -14,8 +14,8 @@ export default function ProofCard({img, name, text}) {
                 <img src={img} alt="avatar"/>
 
                 <div>
-                    <h3>{name}</h3>
-                    <h4>Verified Buyer</h4>
+                    <p>{name}</p>
+                    <p>Verified Buyer</p>
                 </div>
                 
             </div>
