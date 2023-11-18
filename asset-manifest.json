@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fem/static/css/main.dcbafaaa.css",
-    "main.js": "/fem/static/js/main.6f0b2565.js",
+    "main.css": "/fem/static/css/main.d28e8fb6.css",
+    "main.js": "/fem/static/js/main.35301619.js",
     "static/js/787.2b487bf8.chunk.js": "/fem/static/js/787.2b487bf8.chunk.js",
     "static/media/image-product-desktop.jpg": "/fem/static/media/image-product-desktop.c96d43af17111fe78e96.jpg",
     "static/media/image-product-mobile.jpg": "/fem/static/media/image-product-mobile.113818bc746dc8e64ffb.jpg",
@@ -9,17 +9,21 @@
     "static/media/logo.svg": "/fem/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/icon-memory.svg": "/fem/static/media/icon-memory.22a9e0501e58960f3c349cd96fcf108f.svg",
     "index.html": "/fem/index.html",
+    "static/media/bg-pattern-bottom-desktop.svg": "/fem/static/media/bg-pattern-bottom-desktop.32aa6571dc718836bdfc.svg",
+    "static/media/bg-pattern-bottom-mobile.svg": "/fem/static/media/bg-pattern-bottom-mobile.593835ec67fd27ee2a62.svg",
+    "static/media/bg-pattern-top-desktop.svg": "/fem/static/media/bg-pattern-top-desktop.9d4ba9c9b19e4c6be1e6.svg",
+    "static/media/bg-pattern-top-mobile.svg": "/fem/static/media/bg-pattern-top-mobile.58eed600d32e18ece9dc.svg",
     "static/media/icon-cart.svg": "/fem/static/media/icon-cart.9606ad84b7565a3f523f9429396f8066.svg",
     "static/media/icon-visual.svg": "/fem/static/media/icon-visual.61fc2697d5094b6e396276b1a1597c86.svg",
-    "static/media/icon-star.svg": "/fem/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
+    "static/media/icon-star.svg": "/fem/static/media/icon-star.2d8e7b7cb342bc812e9df51d276eaa78.svg",
     "static/media/icon-verbal.svg": "/fem/static/media/icon-verbal.cc1204a0b0559da591a3ea6e99c5cf50.svg",
     "static/media/icon-reaction.svg": "/fem/static/media/icon-reaction.0c1d6b98b4559ba72276d9ceda14692d.svg",
-    "main.dcbafaaa.css.map": "/fem/static/css/main.dcbafaaa.css.map",
-    "main.6f0b2565.js.map": "/fem/static/js/main.6f0b2565.js.map",
+    "main.d28e8fb6.css.map": "/fem/static/css/main.d28e8fb6.css.map",
+    "main.35301619.js.map": "/fem/static/js/main.35301619.js.map",
     "787.2b487bf8.chunk.js.map": "/fem/static/js/787.2b487bf8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcbafaaa.css",
-    "static/js/main.6f0b2565.js"
+    "static/css/main.d28e8fb6.css",
+    "static/js/main.35301619.js"
   ]
 }
